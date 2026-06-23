@@ -1,6 +1,6 @@
 {
   "name": "mursa-mcp",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "description": "Mursa MCP server — connect Claude, Cursor, and other MCP clients to your Mursa tasks, calendar, goals, notes, habits, projects, and Gmail.",
   "main": "server.js",
   "bin": {
@@ -9,7 +9,9 @@
   "type": "commonjs",
   "files": [
     "server.js",
-    "README.md"
+    "setup.js",
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "start": "node server.js"

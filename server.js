@@ -20,6 +20,13 @@
  * Every tool below just maps to one edge-function action.
  */
 
+// Subcommand: `npx mursa-mcp setup [...]` runs the installer instead of the
+// MCP server. Detected before pulling in the SDK so setup stays fast.
+if (process.argv[2] === "setup") {
+  require("./setup.js");
+  return;
+}
+
 require("dotenv").config({ path: require("path").join(__dirname, ".env") });
 
 const { McpServer } = require("@modelcontextprotocol/sdk/server/mcp.js");
