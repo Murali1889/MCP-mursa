@@ -24,7 +24,19 @@ revocation.
 
 ## 2. Add to your client
 
-### Claude Code (`~/.claude.json`)
+### Option A (recommended): one command
+
+```bash
+npx -y mursa-mcp setup --key=mursa_mcp_PASTE_HERE
+```
+
+Detects which clients you have installed, asks before touching anything, and verifies the key works.
+
+---
+
+### Option B: manual config
+
+#### Claude Code (`~/.claude.json`)
 
 ```json
 {
