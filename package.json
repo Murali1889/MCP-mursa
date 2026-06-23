@@ -1,6 +1,6 @@
 {
   "name": "mursa-mcp",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Mursa MCP server — connect Claude, Cursor, and other MCP clients to your Mursa tasks, calendar, goals, notes, habits, projects, and Gmail.",
   "main": "server.js",
   "bin": {
@@ -9,8 +9,7 @@
   "type": "commonjs",
   "files": [
     "server.js",
-    "README.md",
-    "LICENSE"
+    "README.md"
   ],
   "scripts": {
     "start": "node server.js"
@@ -30,13 +29,6 @@
   ],
   "license": "MIT",
   "homepage": "https://mursa.me/mcp",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Murali1889/MCP-mursa.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Murali1889/MCP-mursa/issues"
-  },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.29.0",
     "dotenv": "^16.4.5",

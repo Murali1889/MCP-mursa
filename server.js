@@ -30,7 +30,7 @@ const { z } = require("zod");
 
 // Default to the public Mursa proxy. Override only if you're self-hosting or
 // pointing at a preview deployment.
-const MURSA_API_URL = process.env.MURSA_API_URL || "https://mursa.me/api/mcp";
+const MURSA_API_URL = process.env.MURSA_API_URL || "https://www.mursa.me/api/mcp";
 const MURSA_API_KEY = process.env.MURSA_API_KEY;
 
 if (!MURSA_API_KEY) {
@@ -83,7 +83,7 @@ function errorContent(err) {
   };
 }
 
-const server = new McpServer({ name: "mursa", version: "0.3.0" });
+const server = new McpServer({ name: "mursa", version: "0.4.1" });
 
 function tool(name, description, schema, action) {
   server.tool(name, description, schema, async (args) => {
